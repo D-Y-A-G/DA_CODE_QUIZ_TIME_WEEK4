@@ -1,0 +1,21 @@
+* {
+  font-family: sans-serif;
+  align-items: center;
+}
+
+body {
+  background-color: royalblue;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 5px 5px black;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.startbutton {
+  align-content: center;
+}
