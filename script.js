@@ -6,24 +6,23 @@
 
 var countDown = document.querySelector(".timer");
 
-var timeleft = 100;
+var timeLeft = 60;
 
 var start = document.getElementById("startbutton");
 
 function quizTimer() {
   var timer = setInterval(function () {
     timeLeft--;
-    countDown.textContent = secondsLeft;
+    countDown.textContent = timeLeft;
 
-    if (start = true) {
-        startbutton.addEventListener("click")
-
+    if (start === true) {
+      startbutton.addEventListener("click", quizTimer);
     }
 
-    if (timeleft === 0) {
+    if (timeLeft === 0) {
       clearInterval(timer);
     }
-  }, );
+  }, 1000);
 }
 quizTimer();
 
