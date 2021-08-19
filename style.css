@@ -1,6 +1,8 @@
 * {
+  letter-spacing: 3px;
   font-family: sans-serif;
   align-items: center;
+  font-family: "Anton", sans-serif;
 }
 
 body {
@@ -13,9 +15,30 @@ body {
 
 h1 {
   text-align: center;
-  font-family: sans-serif;
 }
 
-.startbutton {
+button {
+  background-color: chocolate;
+  font-size: 1.5rem;
+  color: aliceblue;
+  font-weight: bolder;
+  text-align: center;
+  border-radius: 10px;
+  width: 30%;
+  text-shadow: 3px 3px black;
+  align-content: center;
+  position: relative;
+  top: 150px;
+  left: 35%;
+}
+
+button:hover {
+  background-color: darkcyan;
+}
+
+.instructions {
+  text-shadow: 3px 3px black;
+  font-size: 2rem;
+  text-align: center;
   align-content: center;
 }

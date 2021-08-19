@@ -4,14 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>JavaScript Quiz DA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
-
+  <!-- need to add div for questions and and a highscore link  -->
   <body>
     <h1 class="timer">JAVASCRIPT QUIZ TIME!!!</h1>
 
-    <button class="startbutton">START</button>
+    <h3 class="instructions">
+      Try to answer all questions correctly before timer runs out to get a
+      HIGHSCORE!
+    </h3>
+    <h3 class="instructions" style="color: orange">
+      Hint: if incorrect timer will decrease!
+    </h3>
+    <div class="container">
+      <div id="questions">Questions</div>
+      <div id="answers" class="answerchoices">Annswer Choices</div>
+      <button type="button" class="startbutton hide" id="startquizbtn">
+        👑 START
+      </button>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
