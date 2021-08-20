@@ -33,22 +33,25 @@ function quizTimer() {
 //need to hide button element after being clicked and add points to correct questions
 
 // Questions
-var quizQuestions = [
-  "In what year was JavaScript Developed?",
-  "Which built-in method calls a function for each element in the array?",
-  "Which of the following function of Array object removes the last element from an array and returns that element?",
-];
-//Multiple choice answers
-var answers1 = ["a: 1987", "b: 2002", "c: 1995"]; // correct answer c
-var answer2 = ["a: for each ()", "b: loop ()", "c: while ()"]; // correct answer a
-var answer3 = ["a: push", "b: pop", "c:join"]; // correct answer b
+var quizQuestion1 = "In what year was JavaScript Developed?";
+var quizQuestion2 =
+  "Which built-in method calls a function for each element in the array?";
+var quizQuestion3 =
+  "Which of the following function of Array object removes the last element from an array and returns that element?";
+//Multiple choice answers create a variable for each
+var answer1a = "a: 1987";
+var answer1b = "b: 2002";
+var answer1c = "c: 1995"; // correct answer c
+
+var answer2a = "a: for each ()"; // correct answer a
+var answer2b = "b: loop ()";
+var answer2c = "c: while ()";
+
+var answer3a = "a: push";
+var answer3b = "b: pop"; //correct answer b
+var answer3c = "c: join";
 
 //When user selects and answer if answer is incorrect time is deducted from timer
-var quizBox = document.getElementById("quizQuestions");
-
-function displayQuestions() {
-  quizBox.addEventListener("click", quizQuestions[0]);
-}
 
 function checkAnswrs(event) {}
 //When user selects clicks for an answer he is presented with the next question
