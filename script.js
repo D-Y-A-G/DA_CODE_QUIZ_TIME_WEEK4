@@ -8,7 +8,9 @@ var countDown = document.querySelector(".timer");
 
 var timeLeft = 60;
 
-const quizStart = document.getElementById("startquizbtn");
+let questions = document.getElementById("questions");
+
+var quizStart = document.getElementById("startquizbtn");
 quizStart.addEventListener("click", quizTimer);
 
 function quizTimer() {
@@ -20,54 +22,40 @@ function quizTimer() {
       clearInterval(timer);
     }
   }, 1000);
+
+  let confirmation = quizStart;
+  //console.log(confirmation);
+
+  if (confirmation === true) {
+    quizQuestions.addEventListener("click", questions.append(quizQuestions[0]));
+  }
 }
-//need to hide button element after being clicked
+//need to hide button element after being clicked and add points to correct questions
 
-// Multiple choice questions
-const quizQuestions = [
-  {
-    question1: "In what year was JavaScript Developed",
-    answers: {
-      a: 1987,
-      b: 2002,
-      c: 1995,
-    },
-
-    correct: "c",
-  },
-  {
-    question2:
-      "Which built-in method calls a function for each element in the array?",
-    answers: {
-      a: "for each ()",
-      b: "loop ()",
-      c: "while ()",
-    },
-
-    correct: "a",
-  },
-  {
-    question3:
-      "Which of the following function of Array object removes the last element from an array and returns that element?",
-    answers: {
-      a: "push",
-      b: "pop",
-      c: "join",
-    },
-
-    correct: "b",
-  },
+// Questions
+var quizQuestions = [
+  "In what year was JavaScript Developed?",
+  "Which built-in method calls a function for each element in the array?",
+  "Which of the following function of Array object removes the last element from an array and returns that element?",
 ];
-
-
+//Multiple choice answers
+var answers1 = ["a: 1987", "b: 2002", "c: 1995"]; // correct answer c
+var answer2 = ["a: for each ()", "b: loop ()", "c: while ()"]; // correct answer a
+var answer3 = ["a: push", "b: pop", "c:join"]; // correct answer b
 
 //When user selects and answer if answer is incorrect time is deducted from timer
-function quizTime() {}
+var quizBox = document.getElementById("quizQuestions");
+
+function displayQuestions() {
+  quizBox.addEventListener("click", quizQuestions[0]);
+}
+
+function checkAnswrs(event) {}
 //When user selects clicks for an answer he is presented with the next question
-function userAnswer() {}
+
 //if timer runs out before questions are answered the quiz is over
 
-// when all questions are done user is presented with score and to input their name for highscore
+// when all questions are done user is presented with results score and to input their name for highscore
 
 // provide highscore tracking with name input
 
