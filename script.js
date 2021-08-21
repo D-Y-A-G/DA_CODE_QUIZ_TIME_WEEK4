@@ -40,49 +40,77 @@ const quizQuestion3 =
 const question1Section = document.createElement("div");
 const firstQuestion = document.createElement("ul");
 firstQuestion.textContent = quizQuestion1;
-question1Section.append(quizQuestion1);
+question1Section.append(firstQuestion);
 
 questions.append(question1Section);
 
 const question2Section = document.createElement("div");
 const secondQuestion = document.createElement("ul");
 secondQuestion.textContent = quizQuestion2;
-question2Section.append(quizQuestion2);
+question2Section.append(secondQuestion);
 
 questions.append(question2Section);
 
 const question3Section = document.createElement("div");
 const thirdQuestion = document.createElement("ul");
-secondQuestion.textContent = quizQuestion3;
-question3Section.append(quizQuestion3);
+thirdQuestion.textContent = quizQuestion3;
+question3Section.append(thirdQuestion);
 
 questions.append(question3Section);
 
-//Multiple choice answers
-
+//////////////////Multiple choice answers////////////////////
 const answer1a = "A: 1987";
 const answer1b = "B: 2002";
 const answer1c = "C: 1995"; // correct answer c
 
-//answer1.append(answer1a);
-//answer2.append(answer1b);
-//answer3.append(answer1c);
+const answerOneA = document.createElement("li");
+answerOneA.textContent = answer1a;
+question1Section.append(answerOneA);
 
+const answerOneB = document.createElement("li");
+answerOneB.textContent = answer1b;
+question1Section.append(answerOneB);
+
+const answerOneC = document.createElement("li");
+answerOneC.textContent = answer1c;
+question1Section.append(answerOneC);
+
+///////////////////////////////////////////////////////////
 const answer2a = " A: for each ()"; // correct answer a
 const answer2b = " B: loop ()";
 const answer2c = " C: while ()";
 
-//answer1.append(answer2a);
-//answer2.append(answer2b);
-//answer3.append(answer2c);
+const answertwoA = document.createElement("li");
+answertwoA.textContent = answer2a;
+question2Section.append(answertwoA);
+
+const answertwoB = document.createElement("li");
+answertwoB.textContent = answer2b;
+question2Section.append(answertwoB);
+
+const answertwoC = document.createElement("li");
+answertwoC.textContent = answer2c;
+question2Section.append(answertwoC);
+//////////////////////////////////////////////////////////
 
 const answer3a = " A: push";
 const answer3b = " B: pop"; //correct answer b
 const answer3c = " C: join";
 
-//answer1.append(answer3a);
-//answer2.append(answer3b);
-//answer3.append(answer3c);
+const answerThreeA = document.createElement("li");
+answerThreeA.textContent = answer3a;
+question3Section.append(answerThreeA);
+
+const answerThreeB = document.createElement("li");
+answerThreeB.textContent = answer3b;
+question3Section.append(answerThreeB);
+
+const answerThreeC = document.createElement("li");
+answerThreeC.textContent = answer3c;
+question3Section.append(answerThreeC);
+
+///////////////////////////////////////////////////////////
+
 
 // when user clicks start he is presented with first question
 function checkAnswrs(event) {
