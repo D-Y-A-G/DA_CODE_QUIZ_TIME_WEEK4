@@ -111,10 +111,22 @@ question3Section.append(answerThreeC);
 
 ///////////////////////////////////////////////////////////
 
-
 // when user clicks start he is presented with first question
-function checkAnswrs(event) {
-  if ((quizStart = true)) addEventListener("click", quizQuestion1);
+function getQuestion(currentQuestion) {
+  if (currentQuestion == undefined) {
+    createQuestionSection(quizQuestion1, answer1a, answer1b, answer1c);
+  } else if (currentQuestion === quizQuestion1) {
+    createQuestionSection(quizQuestion2, answer2a, answer2b, answer2c);
+  } else if (currentQuestion === quizQuestion2) {
+    createQuestionSection(quizQuestion3, answer3a, answer3b, answer3c);
+  } else;
+}
+
+function displayQuestion(currentPosition) {
+  if (currentPosition == undefined) {
+    createQuestionAnswers === first
+  }
+  quizQuestion1;
 }
 //When user selects and answer if answer is incorrect time is deducted from timer
 
