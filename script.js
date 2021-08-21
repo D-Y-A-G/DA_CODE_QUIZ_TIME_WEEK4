@@ -6,12 +6,15 @@
 
 var countDown = document.querySelector(".timer");
 
-var timeLeft = 60;
+let timeLeft = 60;
 
-//let questions = document.getElementById("questions");
+//const questions = document.createElement("div");
+let questions = document.getElementById("questions");
+
+let answers = document.getElementById("answers");
 
 var quizStart = document.getElementById("startquizbtn");
-quizStart.addEventListener("click", quizTimer);
+quizStart.addEventListener("click", function () {});
 
 function quizTimer() {
   var timer = setInterval(function () {
@@ -26,28 +29,51 @@ function quizTimer() {
 
 //need to hide button element after being clicked and add points to correct questions
 
-let div = document.createElement("div");
-div.append(quizQuestion1);
-quizQuestion1.addEventListener("click", quizTimer);
-
 // Questions variables
-var quizQuestion1 = "In what year was JavaScript Developed?";
-var quizQuestion2 =
+const quizQuestion1 = "In what year was JavaScript Developed?";
+const quizQuestion2 =
   "Which built-in method calls a function for each element in the array?";
-var quizQuestion3 =
+const quizQuestion3 =
   "Which of the following function of Array object removes the last element from an array and returns that element?";
+
+const questionOneSection = document.createElement("div");
+const firstQuestion = document.createElement("ul");
+firstQuestion.textContent = quizQuestion1;
+questionOneSection.append(quizQuestion1);
+
+questions.append(questionOneSection);
+
+//question1.append(quizQuestion1);
+//question2.append(quizQuestion2);
+//question3.append(quizQuestion3);
+
+//quizQuestion1.addEventListener("click", quizTimer);
+
 //Multiple choice answers create a variable for each
-var answer1a = "a: 1987";
-var answer1b = "b: 2002";
-var answer1c = "c: 1995"; // correct answer c
 
-var answer2a = "a: for each ()"; // correct answer a
-var answer2b = "b: loop ()";
-var answer2c = "c: while ()";
+const answer1a = "A: 1987";
+const answer1b = "B: 2002";
+const answer1c = "C: 1995"; // correct answer c
 
-var answer3a = "a: push";
-var answer3b = "b: pop"; //correct answer b
-var answer3c = "c: join";
+answer1.append(answer1a);
+answer2.append(answer1b);
+answer3.append(answer1c);
+
+const answer2a = " A: for each ()"; // correct answer a
+const answer2b = " B: loop ()";
+const answer2c = " C: while ()";
+
+answer1.append(answer2a);
+answer2.append(answer2b);
+answer3.append(answer2c);
+
+const answer3a = " A: push";
+const answer3b = " B: pop"; //correct answer b
+const answer3c = " C: join";
+
+answer1.append(answer3a);
+answer2.append(answer3b);
+answer3.append(answer3c);
 
 // when user clicks start he is presented with first question
 function checkAnswrs(event) {
