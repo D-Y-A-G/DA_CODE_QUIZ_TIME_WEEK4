@@ -12,7 +12,7 @@ to get a better grasp in understanding them.
 
 Attached is a view of the JavaScript Quiz with questions and timer countdown.
 
-<h2 style="color:blue">Instuctions:</h2>
+<h2>Instuctions:</h2>
 
 User loads page is presented with Quiz and upon clicking start user has 1 min to complete quiz.
 
