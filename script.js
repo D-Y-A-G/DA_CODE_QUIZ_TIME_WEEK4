@@ -25,6 +25,7 @@ function quizTimer() {
       clearInterval(timer);
     }
   }, 1000);
+  quizStart.style.visibility = "hidden";
 }
 
 //need to hide button element after being clicked and add points to correct questions
@@ -122,6 +123,14 @@ function getQuestion(currentQuestion) {
   } else;
 }
 
+
+
+ //word on function to display each question and answer set
+function showQuestion() {
+  if (question1Section === answer1c) 
+  addEventListener("click", answer1c);
+  
+}
 
 //When user selects and answer if answer is incorrect time is deducted from timer
 

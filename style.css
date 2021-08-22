@@ -27,7 +27,7 @@ button {
   text-align: center;
   border-radius: 10px;
   width: 20%;
-  text-shadow: 7px 7px black;
+  text-shadow: 3px 3px black;
   align-content: center;
   position: relative;
   top: 150px;
@@ -57,4 +57,5 @@ li:hover {
   cursor: hand;
   background-color: darkorange;
   transform: scale(1.05);
+  
 }
