@@ -125,13 +125,6 @@ function getQuestion(currentQuestion) {
 
 
 
- //word on function to display each question and answer set
-function showQuestion() {
-  if (question1Section === answer1c) 
-  addEventListener("click", answer1c);
-  
-}
-
 //When user selects and answer if answer is incorrect time is deducted from timer
 
 //When user selects clicks for an answer he is presented with the next question
