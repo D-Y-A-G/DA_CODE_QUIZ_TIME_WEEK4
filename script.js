@@ -29,7 +29,7 @@ function quizTimer() {
 
 //need to hide button element after being clicked and add points to correct questions
 
-// Questions variables
+// Questions variables changed to const because value needs to be the same
 const quizQuestion1 = "In what year was JavaScript Developed?";
 const quizQuestion2 =
   "Which built-in method calls a function for each element in the array?";
@@ -111,7 +111,7 @@ question3Section.append(answerThreeC);
 
 ///////////////////////////////////////////////////////////
 
-// when user clicks start he is presented with first question
+// when user clicks start he is presented with first question and when an answer is clicked user is presented next quesion- building function//
 function getQuestion(currentQuestion) {
   if (currentQuestion == undefined) {
     createQuestionSection(quizQuestion1, answer1a, answer1b, answer1c);
@@ -122,12 +122,7 @@ function getQuestion(currentQuestion) {
   } else;
 }
 
-function displayQuestion(currentPosition) {
-  if (currentPosition == undefined) {
-    createQuestionAnswers === first
-  }
-  quizQuestion1;
-}
+
 //When user selects and answer if answer is incorrect time is deducted from timer
 
 //When user selects clicks for an answer he is presented with the next question

@@ -20,14 +20,14 @@ h1 {
 }
 
 button {
-  background-color: chocolate;
+  background-color: orange;
   font-size: 1.5rem;
   color: rgb(229, 241, 251);
   font-weight: bolder;
   text-align: center;
   border-radius: 10px;
   width: 20%;
-  text-shadow: 3px 3px black;
+  text-shadow: 7px 7px black;
   align-content: center;
   position: relative;
   top: 150px;
@@ -43,4 +43,18 @@ button:hover {
   font-size: 1.25rem;
   text-align: center;
   align-content: center;
+}
+div ul {
+  background-color: darkblue;
+}
+
+li {
+  background-color: orange;
+  box-shadow: rgb(2, 2, 59) 7px 7px;
+}
+
+li:hover {
+  cursor: hand;
+  background-color: darkorange;
+  transform: scale(1.05);
 }
