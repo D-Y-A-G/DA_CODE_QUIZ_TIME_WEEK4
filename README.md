@@ -1,7 +1,7 @@
 # DA_CODE_QUIZ_TIME_WEEK4
 Creating a JavaScript Quiz with a Timer and High Score. 
 
-JavaScript Quiz Time!
+<h1>JavaScript Quiz Time!</h1>
 
 In this weeks homework project we had to create a quiz using concepts we have learned in class.
 This homework was a great challenge, it helped me solidify some concepts in JavaScript and also 
